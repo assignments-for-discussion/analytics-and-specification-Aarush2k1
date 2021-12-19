@@ -5,10 +5,10 @@ function average(numbers) {
   numbers = numbers.filter((a) => !isNaN(a));
   
   let total = 0;
-  for(let i = 0; i < grades.length; i++) {
-    total += grades[i];
+  for(let i = 0; i < numbers.length; i++) {
+    total += numbers[i];
   }
-  let avg = total / grades.length;
+  let avg = total / numbers.length;
   return avg;
 }
 
