@@ -1,8 +1,15 @@
 
 function average(numbers) {
-  if(numbers.lenggth!=Nan){
-    return numbers.reduce((p, c)=> p + c, 0) / numbers.length;
-  }else return Nan;
+  if (numbers.length == 0) return NaN;
+  
+  numbers = numbers.filter((a) => !isNaN(a));
+  
+  let total = 0;
+  for(let i = 0; i < grades.length; i++) {
+    total += grades[i];
+  }
+  let avg = total / grades.length;
+  return avg;
 }
 
 module.exports = {average};
